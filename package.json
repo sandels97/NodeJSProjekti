@@ -1,0 +1,14 @@
+{
+  "name": "nodejsproject",
+  "version": "1.0.0",
+  "description": "First NodeJs project",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Santtu Hyvärinen",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^25.2.3"
+  }
+}
