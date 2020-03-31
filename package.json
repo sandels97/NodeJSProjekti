@@ -9,6 +9,6 @@
   "author": "Santtu Hyvärinen",
   "license": "ISC",
   "dependencies": {
-    "jest": "^25.2.3"
+    "jest": "^25.2.4"
   }
 }

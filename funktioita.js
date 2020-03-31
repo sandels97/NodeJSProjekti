@@ -2,19 +2,19 @@ const tulostin = require('./tulostus')
 
 const tulostaNelio = (sivu, tulostin) => {
 	for(let i=0; i < sivu;  i++) {
-		tulostin.tulostaTahtia(sivu);
+		tulostin(sivu);
 	}
 }
 
 const tulostaSuorakulmio = (leveys, korkeus, tulostin) => {
 	for(let i=0; i < korkeus;  i++) {
-		tulostin.tulostaTahtia(leveys);
+		tulostin(leveys);
 	}
 }
 
 const tulostaKolmio = (korkeus, tulostin) => {
 	for(let i=0; i < korkeus;  i++) {
-		tulostin.tulostaTahtia(i+1);
+		tulostin(i+1);
 	}
 }
 
@@ -34,9 +34,9 @@ const kertoma = (n) => {
 	return tulos;
 }
 
-/*tulostaNelio(4, tulostin);
-tulostaSuorakulmio(3,5,tulostin);
-tulostaKolmio(5, tulostin);
+/*tulostaNelio(4, tulostin.tulostaTahtia);
+tulostaSuorakulmio(3,5,tulostin.tulostaTahtia);
+tulostaKolmio(5, tulostin.tulostaTahtia);
 tulostin.tulostaTulos(lukusarjanSumma(100));
 tulostin.tulostaTulos(kertoma(10));*/
 
